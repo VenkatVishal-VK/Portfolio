@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>VENKAT VISHAL V K</h2>
+    <div>
+        <a href="index.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section>
+    <h1>Projects</h1>
+    <div class="card" onclick="toggleProject('p1')">
+        <h3>Multimedia Encryption and Decryption tool</h3>
+        <p>Click to view details</p>
+    </div>
+
+    <div id="p1" class="project-details">
+        <p>This project is developed using only Python and its built-in modules. Tkinter is used to create the graphical user interface (GUI), and sqlite3 is used to store user login credentials securely.
+
+This tool uses AES and RSA algorithms for encryption and decryption.
+
+Currently, it is available only for Windows, but it will be deployed on other platforms in the future.
+         </p>
+        <img src="C:\Portfolio\images\1.jpg" alt="Encryption Image">
+        <img src="C:\Portfolio\images\image.png" alt="Decryption Image">
+    </div>
+
+    <div class="card" onclick="toggleProject('p3')">
+        <h3>3D FPS game</h3>
+        <p>Click to view details</p>
+    </div>
+
+    <div id="p3" class="project-details">
+        <p>It is completely created using Python with the help of the pygame module. 
+            As the player completes each stage, 
+            the difficulty level of the enemies increases.
+        </p>
+        <img src="C:\Portfolio\images\Screenshot 2025-12-22 203556.png" alt="Game Image">
+    </div>
+
+</section>
+
+<script>
+function toggleProject(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
